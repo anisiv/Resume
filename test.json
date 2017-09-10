@@ -1,158 +1,48 @@
 {
-    "name-first" : "Aswin",
+    "name-first" : "Anirudh",
     "name-last"  : "Sivaraman",
-    "email"      : "asivara@iu.edu",
+    "email"      : "asivara2@illinois.edu",
     "phone"      : "630-590-3366",
     "website"    : "www.aswinsivaraman.com",
     "linkedin"   : "actuallyaswin",
     "github"     : "actuallyaswin",
     "citizen"    : true,
 
-    "sections-1": [
+
+    "sections": [
       {
         "heading": "Education",
         "data": [
           {
-            "university" : "Indiana University",
-             "degree"     : "PhD Intelligent Systems Engineering",
-             "date-start" : "Aug 2017",
-             "date-end"   : "May 2022"
-          },
-          {
-            "university" : "University of Illinois at Urbana-Chamapaign",
-            "degree"     : "BS Electrical Engineering",
-            "date-start" : "Aug 2011",
-            "date-end"   : "May 2015"
+            "university"  : "University of Illinois at Urbana-Champaign",
+            "degree"      : "BS Electrical Engineering",
+            "date-start"  : "August 2016",
+            "date-end"    : "May 2020",
+            "gpa"         : 3.0,
+            "coursework"  :  [
+              "Digital and Analog Signal Processing",
+              "Linear Algebra",
+              "Data Structures",
+            ]
           }
         ]
+
       },
+
+      {
+        "heading": "Work Experience",
+
+      },
+
+      {
+        "heading": "Leadership Experience",
+
+      },
+
       {
         "heading": "Skills",
-        "data": [
-          {
-            "category": "Software",
-            "items": [
-              "Python",
-              "C",
-              "C++",
-              "MATLAB"
-            ]
-          },
-          {
-            "category": "Web",
-            "items": [
-              "HTML5",
-              "CSS3",
-              "JavaScript",
-              "Angular",
-              "jQuery",
-              "Node",
-              "Express",
-              "RESTful",
-              "SQL",
-              "NoSQL",
-              "MongoDB",
-              "PHP",
-            ]
-          }
-        ]
-      },
-      {
-        "heading": "Coursework",
-        "data": [
-          {
-            "bullets": [
-              "Digital Signal Processing",
-              "Machine Learning",
-              "Speech Recognition & Synthesis",
-              "Artificial Intelligence",
-              "Audio Engineering",
-              "Full-Stack Web Development",
-              "Data-Driven Design",
-              "Music Information Retrieval",
-              "Natural Language Processing",
-              "Computer Music",
-              "Virtual Reality",
-              "Sound Design",
-              "Field Recording",
-              "Acoustics",
-              "Algorithms"
-            ]
-          }
-        ]
+
       }
-    ],
-    "sections-2": [
-      {
-        "heading": "Research",
-        "data": [
-          {
-            "group"      : "Computational Audio Lab",
-            "professor"  : "Prof. Paris Smaragdis",
-            "date-start" : "Aug 2014",
-            "date-end"   : "May 2015",
-            "summary"    : "Wrote my undergraduate thesis supervised PhD candidate Minje Kim to evaluate a novel framework for speech recognition utilizing winner-take-all semantic hashes of spectrogram frames."
-          },
-          {
-            "group"      : "Statistical Speech Technology Group",
-            "professor"  : "Prof. Hasegawa-Johnson",
-            "date-start" : "May 2014",
-            "date-end"   : "Jan 2015",
-            "summary"    : "Performed audio file database segmentation using speech recognition and speech synthesis toolkits (OpenFST, Kaldi, HTK/HTS) to be used in an Emotive audio-visual avatar (EAVA)."
-          }
-        ]
-      },
-      {
-        "heading": "Employment",
-        "data": [
-          {
-            "company"    : "Yellow Box Advertising",
-            "role"       : "Web Strategist",
-            "date-start" : "Jan 2012",
-            "date-end"   : "Current",
-            "summary"    : "Long-standing freelance web development guru at a digital agency specializing in online marketing campaigns, SEO, custom websites, and mobile applications.",
-            "bullets": [
-              "Worked with over 30 clients translating business requirements into data-driven user-friendly web solutions"
-            ]
-          },
-          {
-            "company"    : "Qualcomm",
-            "role"       : "Embedded Software Engineer",
-            "date-start" : "Jul 2015",
-            "date-end"   : "Mar 2017",
-            "summary"    : "Developed and supported Diagnostic Services on various Snapdragon chipsets, handling change requests from customers and internal engineers.",
-            "bullets": [
-              "Designed debug message trace buffer feature on multiple new chipsets",
-              "Mentored team newhires, transferring knowledge over newly written documentation"
-            ]
-          },
-          {
-            "company"    : "University of Illinois at Urbana-Chamapaign",
-            "role"       : "Course Staff for CS498RK",
-            "date-start" : "Jan 2015",
-            "date-end"   : "May 2015",
-            "summary"    : "Teaching assistant for new web development course taught by Prof. Ranjitha Kumar.",
-            "bullets": [
-              "Collaborated with a team of four to design lectures, programming assignments, and exams from scratch for over 100 students",
-              "Created an REST API endpoint autograder using Python and JavaScript"
-            ]
-          }
-        ]
-      }
-      ,
-      {
-        "heading": "Projects",
-        "data": [
-          {
-            "name"       : "Music Browser",
-            "role"       : "",
-            "date-start" : "Aug 2016",
-            "date-end"   : "Oct 2016",
-            "summary"    : [
-              "Built a music information retrieval application in Python which recognizes music played on a vinyl turntable, fetches the relevant metadata through Spotify and Discogs, and then displays the song information in real-time on an AngularJS webapp."
-            ]
-          }
-        ]
-      }
+
     ]
-  };
+}
