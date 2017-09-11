@@ -9,13 +9,15 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:300,600" />
 
+  <link rel="stylesheet" type="text/css" href="blackscheme.css">
+
 </head>
 
 <body>
 
  <header>
     <h1>
-      <strong>{{name-first}}</strong> {{name-last}}
+      <strong>{{name-first}} {{name-last}} </strong>
     </h1>
     <nav>
       {{#citizen}}
@@ -33,7 +35,7 @@
 
 
 <div id="col-1">
-      {{#sections-1}}
+      {{#sections}}
         <section>
           <h2>
             {{heading}}
@@ -41,53 +43,28 @@
           {{#data}}
             {{^category}}
             <article>
-              <h3>{{company}}</h3>
-              <h3>{{degree}}</h3>
-              <h3>{{group}}</h3>
-              <h3>{{name}}</h3>
-              <h4>{{role}}</h4>
-              <h4>{{university}}</h4>
-              <h4>{{professor}}</h4>
-              {{#date-start}}
-                <time>{{date-start}}&mdash;{{date-end}}</time>
-              {{/date-start}}
-              <p>{{summary}}</p>
-              <ul class="bullets">
-              {{#bullets}}
-                <li>{{.}}</li>
-              {{/bullets}}
-              </ul>
+              
             </article>
             {{/category}}
-            <aside>
-              <h5>{{category}}</h5>
-              <ul class="commas">
-              {{#items}}
-                <li>{{.}}</li>
-              {{/items}}
-              </ul>
-            </aside>
           {{/data}}
         </section>
-      {{/sections-1}}
+      {{/sections}}
     </div>
     <div id="col-2">
-      {{#sections-2}}
+      {{#sections}}
         <section>
-          <h2>
-            {{heading}} {{@index}}
-          </h2>
           {{#data}}
             {{^category}}
             <article>
-              <time>{{date-start}}&mdash;{{date-end}}</time>
               <h3>{{company}}</h3>
               <h3>{{degree}}</h3>
               <h3>{{group}}</h3>
+              <time>{{date-start}}&mdash;{{date-end}}</time>
               <h3>{{name}}</h3>
               <h4>{{role}}</h4>
               <h4>{{university}}</h4>
-              <h4>{{professor}}</h4>
+              <h4>{{gpa}}</h4>
+              <h5>{{coursework}}</h5>
               <p>{{summary}}</p>
               <ul class="bullets">
               {{#bullets}}
@@ -106,7 +83,7 @@
             </aside>
           {{/data}}
         </section>
-      {{/sections-2}}
+      {{/sections}}
     </div>
     <div class="clear"></div>
 
@@ -142,8 +119,9 @@
             "degree"      : "BS Electrical Engineering",
             "date-start"  : "August 2016",
             "date-end"    : "May 2020",
-            "gpa"         : 3.0,
-            "coursework"  :  [
+            "gpa"         : "GPA: 3.0/4.0",
+            "coursework"  : "Coursework:",
+            "bullets": [
               "Digital and Analog Signal Processing",
               "Comptuer Engineering and Programming", 
               "Linear Algebra",
@@ -186,20 +164,42 @@
       },
 
       {
-        "heading": "Experience",
+        "heading": "Leadership Experience",
         "data": [
         	{
         		"group" 		: "Mechmania 2016 - ACM",
-        		"date-start"	: "September 2016",
+        		"role"			: "Team Member",
+        		"date-end"		: "September 2016",
         		"summary"		: "Programmed an AI that was tested for efficiency in playing a game.",
         		"bullets": [
         			"Coded in 24 hours in a Hackathon fashion.",
-        			"Placed 5th among 45 competitors."
+        			"Placed 5th among 45 competitors.",
+        			"Organized team and led "
         		]
         	},
 
         	{
-        		"group"			: ""
+        		"group"			: "IEEE Professional Development",
+        		"role"			: "Member",
+        		"date-start"	: "January 2017",
+        		"date-end"		: "Present",
+        		"summary"		: "Helped undergraduate students become acclimated to the professional community.",
+        		"bullets": [
+        			"Introduced several students to career fairs and idea of networking."
+        		] 
+        	},
+
+        	{
+        		"group"			: "Hive Society Improv",
+        		"role"			: "Coach",
+        		"date-start"	: "September 2016",
+        		"date-end"		: "Present",
+        		"summary"		: "Performing skits and scenes without a script.",
+        		"bullets": [
+        			"Facilitated auditions for the incoming freshman team.",
+        			"Instructed freshman team in basic improv techniques.",
+        			"Planned and scheduled showtimes throughout the year."
+        		]
         	}
 
 
@@ -210,6 +210,38 @@
 
       {
         "heading": "Skills",
+        "data": [
+        	{
+        		"category": "Programming",
+        		"items": [
+        			"Java",
+        			"C++",
+        			"C",
+        			"Python"
+        		]
+        	},
+
+        	{
+        		"category": "Web",
+        		"items": [
+        			"HTML5",
+        			"CSS",
+        			"Javascript",
+        			"Jquery"
+        		]
+        	},
+
+        	{
+        		"category": "Languages",
+        		"items" : [
+        			"Spanish",
+        			"Tamil"
+        		]
+        	}
+        ]
+        	// Programming : Java, C++, C, Python
+        	// Web : HTML, CSS, Javascript, Jquery, JSON
+        	// Languages : Spanish, Tamil
 
       }
 
