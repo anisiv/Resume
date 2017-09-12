@@ -32,61 +32,50 @@
 
 
 <main>
+	<div id= col>
 
+		{{#sections}}
+		<section>
+			<aside>
+				<h2>{{heading}}</h2>
+			</aside>
+			<content>
+		        {{#data}}
+	            {{^category}}
+	            <article>
+	              <time>{{singledate}}</time>	            
+	              <h3>{{company}}</h3>
+	              <h3>{{degree}}</h3>
+	              <h3>{{group}}</h3>	              
+	              <time>{{date-start}}&mdash;{{date-end}}</time>
+	              <h3>{{name}}</h3>
+	              <h4>{{role}}</h4>
+	              <h4>{{university}}</h4>
+	              <h3>{{gpa}}</h3>
+	              <h5>{{coursework}}</h5>
+	              <p>{{summary}}</p>
+	              <ul class="bullets">
+	              {{#bullets}}
+	                <li>{{.}}</li>
+	              {{/bullets}}
+	              </ul>
+	            </article>
+	            {{/category}}
+	            <aside>
+	              <h5>{{category}}</h5>
+	              <ul class="commas">
+	              {{#items}}
+	                <li>{{.}}</li>
+	              {{/items}}
+	              </ul>
+	            </aside>
+	          {{/data}}
+			</content>
+		</section>
+		{{/sections}}
 
-<div id="col-1">
-      {{#sections}}
-        <section>
-          <h2>
-            {{heading}}
-          </h2>
-          {{#data}}
-            {{^category}}
-            <article>
-              
-            </article>
-            {{/category}}
-          {{/data}}
-        </section>
-      {{/sections}}
-    </div>
-    <div id="col-2">
-      {{#sections}}
-        <section>
-          {{#data}}
-            {{^category}}
-            <article>
-              <h3>{{company}}</h3>
-              <h3>{{degree}}</h3>
-              <h3>{{group}}</h3>
-              <time>{{date-start}}&mdash;{{date-end}}</time>
-              <h3>{{name}}</h3>
-              <h4>{{role}}</h4>
-              <h4>{{university}}</h4>
-              <h4>{{gpa}}</h4>
-              <h5>{{coursework}}</h5>
-              <p>{{summary}}</p>
-              <ul class="bullets">
-              {{#bullets}}
-                <li>{{.}}</li>
-              {{/bullets}}
-              </ul>
-            </article>
-            {{/category}}
-            <aside>
-              <h5>{{category}}</h5>
-              <ul class="commas">
-              {{#items}}
-                <li>{{.}}</li>
-              {{/items}}
-              </ul>
-            </aside>
-          {{/data}}
-        </section>
-      {{/sections}}
-    </div>
-    <div class="clear"></div>
-
+	</div>
+</main>
 
 
 </main>
@@ -126,8 +115,6 @@
               "Comptuer Engineering and Programming", 
               "Linear Algebra",
               "Data Structures",
-              "Quantum Physics",
-              "Thermodynamics",
               "Differential Equations"
             ]
           }
@@ -167,18 +154,19 @@
         "heading": "Leadership Experience",
         "data": [
         	{
+        		// Update for new Mechmania competition
         		"group" 		: "Mechmania 2016 - ACM",
         		"role"			: "Team Member",
-        		"date-end"		: "September 2016",
+        		"singledate"			: "September 2016",
         		"summary"		: "Programmed an AI that was tested for efficiency in playing a game.",
         		"bullets": [
         			"Coded in 24 hours in a Hackathon fashion.",
         			"Placed 5th among 45 competitors.",
-        			"Organized team and led "
         		]
         	},
 
         	{
+        		// Possibly change to Gamebuilders soon.
         		"group"			: "IEEE Professional Development",
         		"role"			: "Member",
         		"date-start"	: "January 2017",
